@@ -1,0 +1,195 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: #000;
+    height: 150px;
+    width: auto;
+    padding: 5px;
+}
+
+
+/*the nav-bar  */
+
+ul.list li {
+    display: inline-block;
+}
+
+.list li {
+    color: white;
+    margin-left: 30px;
+    position: relative;
+    top: 110px;
+}
+
+.list {
+    margin: auto;
+    margin-left: 150px;
+}
+
+.blue {
+    width: auto;
+    height: 50px;
+    background-color: blue;
+    padding: 10px;
+}
+
+#blue1 {
+    margin: auto;
+    width: 900px;
+}
+
+.gray {
+    width: auto;
+    height: 50px;
+    background-color: gray;
+    padding: 5px;
+}
+
+
+/*style the container  */
+
+.container {
+    margin: auto;
+    width: 900px;
+    background-color: whitesmoke;
+    height: auto;
+}
+
+
+/*style the feature  N/B remember to change color*/
+
+.top {
+    background-color: gray;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+ul.links li {
+    display: inline-block;
+}
+
+.links li {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/*style the col  */
+
+.col {
+    border: 2px solid black;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.row {
+    border: 1px solid green;
+    width: 31.5%;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: auto;
+}
+
+.search {
+    float: right;
+    position: absolute;
+    bottom: 320px;
+    right: 237px;
+    padding: 5px;
+}
+
+
+/*for bars oo  */
+
+
+/*for small screen  */
+
+@media only screen and (max-width: 400px) {
+    header {
+        position: absolute;
+    }
+    .list {
+        display: none;
+        color: black;
+    }
+    .nav-bar {
+        height: 50px;
+        width: 100%;
+    }
+    .bars {
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: whitesmoke;
+        margin: 5px 0;
+    }
+    .nav-bar:hover ul {
+        display: block;
+    }
+    .nav-bar ul,
+    .nav-bar:active ul {
+        display: none;
+        z-index: 1000;
+        background-color: gray;
+        position: absolute;
+        padding-top: 10px;
+        top: 50px;
+        width: 100%;
+        border: 1px solid gray;
+    }
+    .nav-bar li {
+        text-align: left;
+        width: 100%;
+    }
+    .col,
+    .row {
+        width: 100%;
+        margin: auto;
+    }
+    .list {
+        margin-left: 10px;
+        position: relative;
+        bottom: 60px;
+        right: 96px;
+    }
+    .list li {
+        color: white;
+        margin-left: 45px;
+        padding-left: 2px;
+        position: relative;
+        top: 110px;
+    }
+    .container {
+        margin: auto;
+        width: 100%;
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .search {
+        float: none;
+        position: absolute;
+        bottom: 349px;
+        right: 208px;
+        padding: 5px;
+    }
+}
+
+
+/*for medium screen  */
+
+@media only screen and (max-width: 760px) {}
+
+
+/*for  large screen */
+
+@media only screen and (max-width: 900px) {}
