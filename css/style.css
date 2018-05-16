@@ -1,195 +1,462 @@
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.nav-bar {
-    background-color: #000;
-    height: 150px;
-    width: auto;
-    padding: 5px;
-}
-
-
-/*the nav-bar  */
-
-ul.list li {
-    display: inline-block;
-}
-
-.list li {
-    color: white;
-    margin-left: 30px;
-    position: relative;
-    top: 110px;
-}
-
-.list {
-    margin: auto;
-    margin-left: 150px;
-}
-
-.blue {
-    width: auto;
-    height: 50px;
-    background-color: blue;
-    padding: 10px;
-}
-
-#blue1 {
-    margin: auto;
-    width: 900px;
-}
-
-.gray {
-    width: auto;
-    height: 50px;
-    background-color: gray;
-    padding: 5px;
-}
-
-
-/*style the container  */
-
-.container {
-    margin: auto;
-    width: 900px;
-    background-color: whitesmoke;
-    height: auto;
-}
-
-
-/*style the feature  N/B remember to change color*/
-
-.top {
-    background-color: gray;
-    height: 50px;
-    margin-bottom: 15px;
-}
-
-ul.links li {
-    display: inline-block;
-}
-
-.links li {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-
-/*style the col  */
-
-.col {
-    border: 2px solid black;
-    width: 100%;
-    height: 200px;
-    margin-top: 20px;
-}
-
-.row {
-    border: 1px solid green;
-    width: 31.5%;
-    height: 200px;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-footer {
-    background-color: black;
-    height: 50px;
-    width: auto;
-}
-
-.search {
-    float: right;
-    position: absolute;
-    bottom: 320px;
-    right: 237px;
-    padding: 5px;
-}
-
-
-/*for bars oo  */
-
-
-/*for small screen  */
-
-@media only screen and (max-width: 400px) {
-    header {
-        position: absolute;
+        body {
+        padding: 0;
+        margin: 0;
+        background: #f1f1f1;
     }
-    .list {
-        display: none;
-        color: black;
-    }
+    
     .nav-bar {
-        height: 50px;
-        width: 100%;
-    }
-    .bars {
-        display: block;
-        width: 40px;
-        height: 5px;
-        background-color: whitesmoke;
-        margin: 5px 0;
-    }
-    .nav-bar:hover ul {
-        display: block;
-    }
-    .nav-bar ul,
-    .nav-bar:active ul {
-        display: none;
-        z-index: 1000;
-        background-color: gray;
-        position: absolute;
-        padding-top: 10px;
-        top: 50px;
-        width: 100%;
-        border: 1px solid gray;
-    }
-    .nav-bar li {
-        text-align: left;
-        width: 100%;
-    }
-    .col,
-    .row {
-        width: 100%;
-        margin: auto;
-    }
-    .list {
-        margin-left: 10px;
-        position: relative;
-        bottom: 60px;
-        right: 96px;
-    }
-    .list li {
-        color: white;
-        margin-left: 45px;
-        padding-left: 2px;
-        position: relative;
-        top: 110px;
-    }
-    .container {
-        margin: auto;
-        width: 100%;
-        background-color: whitesmoke;
-        height: auto;
-    }
-    .search {
-        float: none;
-        position: absolute;
-        bottom: 349px;
-        right: 208px;
+        background-color: #23282d;
+        height: 140px;
+        width: auto;
         padding: 5px;
     }
+    
+    .reg {
+        position: absolute;
+        left: 1182px;
+        color: #eee;
+    }
+    
+    .reg a {
+        text-decoration: none;
+        color: #eee;
+    }
+    
+    .log {
+        position: absolute;
+        left: 1250px;
+        color: #eee;
+    }
+    
+    .log a {
+        text-decoration: none;
+        color: #eee;
+    }
+    
+    .log,
+    .reg,
+    a:hover {
+        color: #0073aa;
+    }
+    
+    .logo {
+        color: #eee;
+        font-size: 2em;
+        font-weight: bolder;
+        margin: auto;
+        width: 900px;
+        position: relative;
+        top: 50px;
+    }
+    /*the nav-bar  */
+    
+    ul.list li {
+        display: inline-block;
+    }
+    
+    ul.list li a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    
+    ul.list li a:hover {
+        color: #0073aa;
+    }
+    
+    .list li {
+        color: white;
+        margin-left: 10px;
+        position: relative;
+        top: 70px;
+    }
+    
+    .list {
+        margin: auto;
+        margin-left: 173px;
+    }
+    
+    .blue {
+        width: auto;
+        height: 50px;
+        background-color: #0073aa;
+        padding: 10px;
+    }
+    
+    .blue1 {
+        margin: auto;
+        width: 900px;
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    #theme {
+        color: #636363;
+        font-size: 14px;
+        font-weight: 700;
+        padding-top: 7px;
+        font-family: open sans-serif;
+    }
+    
+    .gray a {
+        text-decoration: none;
+    }
+    /* #theme:hover {
+color: red;
+} */
+    
+    .gray {
+        width: auto;
+        height: 30px;
+        background-color: #dfdfdf;
+        padding: 5px;
+    }
+    /*style the container  */
+    
+    .container {
+        margin: auto;
+        width: 900px;
+        background-color: #f1f1f1;
+        ;
+        height: auto;
+    }
+    /*style the feature  N/B remember to change color*/
+    
+    .top {
+        background-color: #fff;
+        height: 56px;
+        margin-bottom: 15px;
+        border: 1px solid #e5e5e5;
+        color: #555;
+        font-size: 14px;
+        margin-top: 15px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, .04);
+    }
+    
+    .down-search input {
+        position: relative;
+        bottom: 42px;
+        left: 610px;
+        padding: 5px;
+        width: 270px;
+        color: #32373c;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        height: 23px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    button {
+        position: relative;
+        left: 941px;
+        top: 20px;
+        padding: 0 16px;
+        height: 33px;
+        background-color: #0085ba;
+        box-shadow: 1px 0 #006799;
+        color: #eee;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 34px;
+        margin: -15px 0 0;
+        border: 1px solid #0085ba;
+        border-radius: 3px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: #006799;
+    }
+    
+    .up-search input {
+        position: relative;
+        bottom: 0px;
+        left: 857px;
+        /* padding: 8px; */
+        width: 256px;
+        background-color: #191e23;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #555;
+        color: #b4b9be;
+        height: 24px;
+        box-sizing: content-box;
+        padding: 3px;
+        margin: 0px;
+        font-size: 12px;
+        font-family: Open Sans, sans-serif;
+    }
+    
+    ul.links li {
+        display: inline-block;
+    }
+    
+    .links li {
+        margin-left: 20px;
+        margin-top: 8px;
+    }
+    /*style the col  */
+    
+    .col {
+        border: 2px solid black;
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    img {
+        height: 200px;
+        width: 100%;
+    }
+    
+    .row {
+        border: 1px solid hsla(0, 0%, 100%, 0.65);
+        width: 31.5%;
+        height: 235px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 47px;
+        background: #fff;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .1);
+        z-index: 50;
+    }
+    
+    .row:hover {
+        opacity: .4;
+        cursor: pointer;
+        border: 2px solid #006799;
+    }
+    
+    .more {
+        padding-left: 20px;
+        font-weight: 600;
+        font-size: 15px;
+        color: #555;
+    }
+    
+    footer {
+        background-color: #f7f7f7;
+        border-top: 1px solid #dfdfdf;
+        height: auto;
+        width: auto;
+        padding: 22px 14px 65px;
+        margin-top: 106px;
+    }
+    
+    .wrap-foot {
+        margin: auto;
+        width: 900px;
+    }
+    
+    .wrap-foot ul {
+        display: inline-block;
+        width: auto;
+        padding-right: 40px;
+    }
+    
+    .wrap-foot li {
+        list-style: none;
+    }
+    
+    .wrap-foot li a {
+        text-decoration: none;
+    }
+    
+    a {
+        color: #0073aa;
+    }
+    /* a:hover {
+color: #0073aa;
+} */
+    /* .search {
+float: right;
+position: absolute;
+bottom: 320px;
+right: 237px;
+padding: 5px;
+} */
+    /*for bars oo  */
+    /*for small screen  */
+    
+    @media only screen and (max-width: 480px) {
+        header {
+            width: 100%;
+        }
+        .list {
+            display: none;
+            color: black;
+        }
+        .nav-bar {
+            height: auto;
+        }
+        .bars {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background-color: whitesmoke;
+            margin: 5px 0;
+        }
+        .nav-bar:hover ul {
+            display: block;
+        }
+        .nav-bar ul,
+        .nav-bar:active ul {
+            display: none;
+            z-index: 1000;
+            background-color: gray;
+            /* position: absolute; */
+            padding-top: 10px;
+            top: 50px;
+            width: 100%;
+            border: 1px solid gray;
+        }
+        .nav-bar li {
+            text-align: left;
+            width: 100%;
+        }
+        .col,
+        .row {
+            width: 100%;
+            margin: auto;
+        }
+        .list {
+            margin-left: 10px;
+            /* position: relative; */
+            bottom: 60px;
+            right: 96px;
+        }
+        .list li {
+            color: white;
+            margin-left: 45px;
+            padding-left: 2px;
+            position: relative;
+            top: 110px;
+        }
+        .container {
+            margin: auto;
+            width: 85%;
+            background-color: whitesmoke;
+            height: auto;
+        }
+        .search {
+            float: none;
+            /* position: absolute; */
+            bottom: 290px;
+            right: 37px;
+            padding: 5px;
+        }
+        .top {
+            background-color: gray;
+            height: 87px;
+            margin-bottom: 15px;
+        }
+        .blue {
+            width: auto;
+            height: 50px;
+            background-color: blue;
+            padding: 10px;
+        }
+        #blue2 {
+            margin: auto;
+            width: 100%;
+            position: relative;
+            top: 20px;
+        }
+        #blue1 {
+            margin: auto;
+            width: 100%;
+            top: 60px;
+        }
+        .logo>span {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            bottom: 10px;
+            left: 76px;
+            width: 100%;
+        }
+        .up-search input,
+        butt {
+            margin-left: 50px;
+            margin-top: 20px;
+            visibility: hidden;
+        }
+        .down-search {
+            visibility: hidden;
+        }
+        .butt {
+            visibility: hidden;
+        }
+        .wrap-foot {
+            margin: auto;
+            width: 100%;
+        }
+        /*for medium screen  */
+        @media only screen and (max-width: 768px) {
+            .col,
+            .row {
+                width: 100%;
+                margin: auto;
+            }
+            .up-search input {
+                position: absolute;
+                visibility:
+            }
+            .list {
+                margin-left: 10px;
+                position: relative;
+                bottom: 60px;
+                right: 96px;
+            }
+            .list li {
+                color: white;
+                margin-left: 45px;
+                padding-left: 2px;
+                position: relative;
+                top: 110px;
+            }
+            .container {
+                margin: auto;
+                width: 85%;
+                background-color: whitesmoke;
+                height: auto;
+            }
+            .search {
+                float: none;
+                position: absolute;
+                bottom: 290px;
+                right: 37px;
+                padding: 5px;
+            }
+            .top {
+                background-color: gray;
+                height: 87px;
+                margin-bottom: 15px;
+            }
+            .blue {
+                width: auto;
+                height: 50px;
+                background-color: blue;
+                padding: 10px;
+            }
+            #blue2 {
+                margin: auto;
+                width: 100%;
+                position: relative;
+                top: 20px;
+            }
+            #blue1 {
+                margin: auto;
+                width: 100%;
+                top: 60px;
+            }
+        }
+        /*for  large screen */
+        /* @media only screen and (max-width: 900px) {
+.up-search input {
+float: right;
+position: relative;
 }
-
-
-/*for medium screen  */
-
-@media only screen and (max-width: 760px) {}
-
-
-/*for  large screen */
-
-@media only screen and (max-width: 900px) {}
+} */
